@@ -42,4 +42,22 @@ images.forEach(image => {
     });
 });
 
+describe('Drag and Drop Test', () => {
+    it('should drag and drop images correctly', () => {
+        cy.visit('URL_OF_YOUR_APP'); // Replace with your app's URL
+
+        // Check initial state
+        for (let index = 1; index <= 6; index++) {
+            cy.get(`#div${index}`).should('have.length', 1);
+        }
+
+        // Example drag from div1 to div2
+        cy.get('#div1').trigger('mousedown', { force: true });
+        cy.get('#div2').trigger('mousemove').trigger('mouseup', { force: true });
+
+        // Check if the images were swapped
+        cy.get('#div1').should('contain', 'Image 2'); // Now should have content of div2
+        cy.get('#div2').should('contain', 'Image 1'); // Now should have content of div1
+    });
+});
 

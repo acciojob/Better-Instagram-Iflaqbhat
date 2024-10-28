@@ -1,43 +1,49 @@
-#drag1 {
+#div1 {
   background-image: url("https://picsum.photos/id/237/200/300");
   height: 300px;
   width: 200px;
   margin: 20px;
+  background-size: cover; /* Ensure the image covers the entire div */
 }
 
-#drag2 {
+#div2 {
   background-image: url("https://picsum.photos/seed/picsum/200/300");
   height: 300px;
   width: 200px;
   margin: 20px;
+  background-size: cover; /* Ensure the image covers the entire div */
 }
 
-#drag3 {
+#div3 {
   background-image: url("https://picsum.photos/200/300?grayscale");
   height: 300px;
   width: 200px;
   margin: 20px;
+  background-size: cover; /* Ensure the image covers the entire div */
 }
 
-#drag4 {
+#div4 {
   background-image: url("https://picsum.photos/200/300/");
   height: 300px;
   width: 200px;
   margin: 20px;
+  background-size: cover; /* Ensure the image covers the entire div */
 }
 
-#drag5 {
+#div5 {
   background-image: url("https://picsum.photos/200/300.jpg");
   height: 300px;
   width: 200px;
   margin: 20px;
+  background-size: cover; /* Ensure the image covers the entire div */
 }
 
-#drag6 {
+#div6 {
   background-image: url("https://picsum.photos/id/102/200/300");
   height: 300px;
   width: 200px;
   margin: 20px;
+  background-size: cover; /* Ensure the image covers the entire div */
 }
 
 div.container {
@@ -51,7 +57,7 @@ div.container {
 }
 
 .selected {
-  border: 5px solid rgb(0, 195, 255);
+  border: 5px solid rgb(0, 195, 255); /* Optional: Highlight the dragged item */
 }
 
 p {
@@ -61,6 +67,4 @@ p {
 button {
   margin: 20px;
 }
-.images{
-	cursor:move;
-}
+
